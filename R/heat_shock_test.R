@@ -48,6 +48,7 @@ df_clean %>%
   ggplot(aes(x=time,y=absorbance,color=genotype)) +
   geom_smooth() +
   facet_wrap(~treatment)
+ggsave("./output/figs/54deg_shock_24hr_comparison_allgenotypes.png")
 
 # model "endpoint"
 df_clean %>% 

@@ -11,10 +11,10 @@ theme_set(theme_minimal())
 
 
 # double-check results range on sheet
-sheetrange <- "B38:CU63"
+sheetrange <- "B27:CU52"
 
 # read data
-df <- read_xlsx("./data/pilot_data/Top_3_54_c_3_minutes.xlsx",range = sheetrange)
+df <- read_xlsx("./data/pilot_data/54C_9_Min_top_3_rows_24_Hours.xlsx",range = sheetrange)
 
 # find control absorbance
 controls <- df %>% 
